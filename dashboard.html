@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/main.css">
-
-    <link rel="stylesheet" href="">
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,103 +62,103 @@
         </ul>
     </div>
 
-    <div class="nav">
-        <div class="main-header">
+    <div class="d-flex flex-column">
+        <div class="main-header d-flex justify-content-between align-items-center bg-white position-relative p-2">
             <form action="" class="search">
-                <input type="search" name="" id="">
+                <input type="search" name="" id="" placeholder="Type A Keyword" >
             </form>
-            <div class="info">
+            <div class="info d-flex position-relative align-items-center">
                 <i class="fa-regular fa-bell fa-lg"></i>
-                <img src="imgs/avatar.png" alt="">
+                <img src="imgs/avatar.png" alt="#" class="ms-10">
             </div>
         </div>
-
         <div class="main-nav-head">dashboard</div>
+
         <div class="dash-body">
-            <div class="welcome-section">
-                <div class="part1">
-                    <div class="part1-info">
+            <div class="welcome-section rounded overflow-hidden bg-white">
+                <div class="part1 d-flex justify-sb bg-gray p-4">
+                    <div class="part1-info d-flex align-items-center flex-column">
                         <h2 class="dash_box_head">welcome</h2>
                         <p class="dash-box-p">elzero</p>
                     </div>
                     <img src="imgs/welcome.png" alt="">
                 </div>
 
-                <div class="part2">
-                    <img src="imgs/avatar.png" alt="">
-                    <div class="part2-info">
-                        <div class="box">
-                            <p>osama elzero</p>
-                            <span>developer</span>
+                <div class="part2 d-flex flex-column ">
+                    <img src="imgs/avatar.png" alt="#" >
+                    <div class="part2-info w-100 d-flex justify-content-evenly mt-5 p-4">
+                        <div class="box d-flex justify-content-center flex-column align-items-center">
+                            <p class="mb-4 text-capitalize">osama elzero</p>
+                            <span class="text-capitalize">developer</span>
                         </div>
-                        <div class="box">
-                            <p>80</p>
-                            <span>projects</span>
+                        <div class="box d-flex justify-content-center flex-column align-items-center">
+                            <p class="mb-4 text-capitalize">80</p>
+                            <span class="text-capitalize">projects</span>
                         </div>
-                        <div class="box">
-                            <p>$8500</p>
-                            <span>earned</span>
+                        <div class="box d-flex justify-content-center flex-column align-items-center">
+                            <p class="mb-4 text-capitalize">$8500</p>
+                            <span class="text-capitalize">earned</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="part3">
-                    <a href="">profilo</a>
+                <div class="part3 m-4 d-flex justify-content-end">
+                    <a href="#" class="btn1">profilo</a>
                 </div>
             </div>
 
-            <div class="quick-draft box-sh">
+            <div class="quick-draft box-sh ">
                 <h2 class="dash_box_head">quick draft</h2>
                 <p class="dash-box-p">write a draft for your ideas</p>
-                <form action="dashboard.html">
+                <form action="dashboard.html" class="d-flex flex-column gap-2 align-items-end">
                     <input type="text" name="" id="" placeholder="Title">
                     <textarea name="" id="" placeholder="Your Thought"></textarea>
-                    <input type="button" value="save">
+                    <input class="btn1" type="button" value="save">
                 </form>
             </div>
 
-            <div class="targets box-sh">
-                <h2 class="dash_box_head">yearly tragets</h2>
+            <div class="targets box-sh d-flex flex-column">
+                <h2 class="dash_box_head">yearly targets</h2>
                 <p class="dash-box-p">targets of the year</p>
-                <div class="shape">
-                    <div class="sh-shape bg-blue c-blue">
+                <div class="shape d-flex justify-content-between mt-2">
+                    <div class="sh-shape bg-blue c-blue d-flex justify-content-center align-items-center">
                         <i class="fa-solid fa-dollar "></i>
                     </div>
-                    <div class="sh">
-                        <p class="info">money</p>
-                        <div class="percent" style="width: 80%;">
-                            <span class="p-name">$20,000</span>
-                            <span class="p-value bgg-blue" >80%</span>
+                    <div class="sh d-flex flex-column justify-content-evenly position-relative">
+                        <p class="text-gray">Money</p>
+                        <div class="d-flex justify-content-between mb-2" style="width: 80%;">
+                            <span class="text-bold">$20,000</span>
+                            <span class="p-value px-1 text-white position-relative bgg-blue rounded-3" >80%</span>
                         </div>
-                        <div class="boxx bg-blue"><span class="bgg-blue" style="width: 80%;"></span></div>
+                        <div class="boxx w-100 progress bg-blue "><span class=" progress-bar d-flex bgg-blue" style="width: 80%;"></span></div>
                     </div>
                 </div>
 
-                <div class="shape">
-                    <div class="sh-shape bg-orange">
+                <div class="shape d-flex justify-content-between mt-2">
+                    <div class="sh-shape bg-orange d-flex justify-content-center align-items-center">
                         <i class="fa-solid fa-code c-orange"></i>
                     </div>
-                    <div class="sh">
-                        <p class="info">projects</p>
-                        <div class="percent" style="width: 55%;">
-                            <span class="p-name">24</span>
-                            <span class="p-value bgg-orange">55%</span>
+                    <div class="sh d-flex flex-column justify-content-evenly position-relative">
+                        <p class="text-gray">Projects</p>
+                        <div class="d-flex justify-content-between  mb-2" style="width: 55%;">
+                            <span class="text-bold">24</span>
+                            <span class="p-value px-1  text-white position-relative bgg-orange  rounded-3">55%</span>
                         </div>
-                        <div class="boxx bg-orange"><span class="bgg-orange" style="width: 55%;"></span></div>
+                        <div class="boxx w-100 progress bg-orange"><span class="bgg-orange" style="width: 55%;"></span></div>
                     </div>
                 </div>
                 
-                <div class="shape">
-                    <div class="sh-shape bg-green ">
+                <div class="shape d-flex justify-content-between mt-2">
+                    <div class="sh-shape bg-green d-flex justify-content-center align-items-center">
                         <i class="fa-solid fa-user fa-lg c-green "></i>
                     </div>
-                    <div class="sh">
-                        <p class="info">projects</p>
-                        <div class="percent" style="width: 75%;">
-                            <span class="p-name">12</span>
-                            <span class="p-value  bgg-green">75%</span>
+                    <div class="sh d-flex flex-column justify-content-evenly position-relative">
+                        <p class="text-gray">Projects</p>
+                        <div class="d-flex justify-content-between mb-2" style="width: 75%;">
+                            <span class="text-bold">12</span>
+                            <span class="p-value px-1 text-white position-relative  bgg-green  rounded-3">75%</span>
                         </div>
-                        <div class="boxx bg-green"><span class="bgg-green" style="width: 75%;"></span></div>
+                        <div class="boxx w-100 progress bg-green"><span class="bgg-green" style="width: 75%;"></span></div>
                     </div>
                 </div>
             </div>
@@ -167,108 +166,108 @@
             <div class="tickets box-sh">
                 <h2 class="dash_box_head">yearly tickets</h2>
                 <p class="dash-box-p">Everything About Support Tickets</p>
-                <div class="content">
-                    <div class="box">
+                <div class="content d-flex justify-content-around gap-2 flex-wrap">
+                    <div class="box d-flex flex-column align-items-center rounded-1">
                     <i class="fa-regular fa-rectangle-list c-orange"></i>
-                    <h2>2500</h2>
-                    <p>total</p>
+                    <h2 class="my-2">2500</h2>
+                    <p class="text-capitalize text-gray">total</p>
                 </div>
-                <div class="box">
+                <div class="box d-flex flex-column align-items-center rounded-1">
                     <i class="fa-solid fa-spinner c-blue"></i>
-                    <h2>500</h2>
-                    <p>pending</p>
+                    <h2 class="my-2">500</h2>
+                    <p class="text-capitalize text-gray">pending</p>
                 </div>
-                <div class="box">
+                <div class="box d-flex flex-column align-items-center rounded-1">
                     <i class="fa-regular fa-circle-check c-green"></i>
-                    <h2>1900</h2>
-                    <p>closed</p>
+                    <h2 class="my-2">1900</h2>
+                    <p class="text-capitalize text-gray ">closed</p>
                 </div>
-                <div class="box">
+                <div class="box d-flex flex-column align-items-center rounded-1">
                     <i class="fa-regular fa-rectangle-xmark c-red"></i>
-                    <h2>100</h2>
-                    <p>deleted</p>
+                    <h2 class="my-2">100</h2>
+                    <p class="text-capitalize text-gray">deleted</p>
                 </div>
                 </div>
             </div>
 
             <div class="news box-sh">
                 <h2 class="dash_box_head">latest news</h2>
-                <div class="content">
-                    <div class="part1">
+                <div class="content d-flex justify-content-between align-items-center mb-3">
+                    <div class="part1 d-flex justify-content-around">
                         <img src="imgs/news-01.png" alt="">
-                        <div class="info">
+                        <div class="text-gray ms-2 d-flex flex-column justify-content-around">
                             <p>Created SASS Section</h3>
                             <p>New SASS Examples & Tutorials</p>
                         </div>
                     </div>
-                    <span class="part2">3 days ago</span>
+                    <span class="btn2">3 days ago</span>
                 </div>
-                <div class="content">
-                    <div class="part1">
+                <div class="content d-flex justify-content-between align-items-center mb-3">
+                    <div class="part1 d-flex justify-content-around">
                         <img src="imgs/news-02.png" alt="">
-                        <div class="info">
+                        <div class="info ms-2 d-flex flex-column justify-content-around">
                             <p>Created SASS Section</h3>
                             <p>New SASS Examples & Tutorials</p>
                         </div>
                     </div>
-                    <span class="part2">3 days ago</span>
+                    <span class="btn2">3 days ago</span>
                 </div>
-                <div class="content">
-                    <div class="part1">
+                <div class="content d-flex justify-content-between align-items-center mb-3">
+                    <div class="part1 d-flex justify-content-around">
                         <img src="imgs/news-03.png" alt="">
-                        <div class="info">
+                        <div class="info ms-2 d-flex flex-column justify-content-around">
                             <p>Created SASS Section</h3>
                             <p>New SASS Examples & Tutorials</p>
                         </div>
                     </div>
-                    <span class="part2">3 days ago</span>
+                    <span class="btn2">3 days ago</span>
                 </div>
-                <div class="content">
-                    <div class="part1">
+                <div class="content d-flex justify-content-between align-items-center mb-3">
+                    <div class="part1 d-flex justify-content-around">
                         <img src="imgs/news-04.png" alt="">
-                        <div class="info">
-                            <h3>Created SASS Section</h3>
+                        <div class="info ms-2 d-flex flex-column justify-content-around">
+                            <p>Created SASS Section</p>
                             <p>New SASS Examples & Tutorials</p>
                         </div>
                     </div>
-                    <span class="part2">3 days ago</span>
+                    <span class="btn2">3 days ago</span>
                 </div>
             </div>
 
             <div class="tasks box-sh">
                 <h2 class="dash_box_head">latest tasks</h2>
                 <div class="content">
-                    <div class="box">
-                        <div class="info">
-                            <h4>Record One New Video</h4>
+                    <div class="box d-flex justify-content-between align-items-center py-2">
+                        <div class="info d-flex align-items-center">
+                            <h5>Record One New Video</h5>
                             <p>Record Python Create Exe Project</p>
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <div class="box">
+                    <div class="box d-flex justify-content-between align-items-center py-2">
                         <div class="info">
-                            <h4>Write Article</h4>
+                            <h5>Write Article</h5>
                             <p>Write Low Level vs High Level Languages</p>
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <div class="box">
+                    <div class="box d-flex justify-content-between align-items-center py-2">
                         <div class="info">
-                            <h4>Finish Project</h4>
+                            <h5>Finish Project</h5>
                             <p>Publish Academy Programming Project</p>
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <div class="box">
+                    <div class="box d-flex justify-content-between align-items-center py-2">
                         <div class="info">
-                            <h4><del>Attend The Meeting</del></h4>
+                            <h5><del>Attend The Meeting</del></h5>
                             <p><del>Attend The Project Business Analysis Meetting</del></p>
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                    <div class="box">
+                    <div class="box d-flex justify-content-between align-items-center py-2">
                         <div class="info">
-                            <h4>Finish Lesson</h4>
+                            <h5>Finish Lesson</h5>
                             <p>Finish Teaching Flex Box</p>
                         </div>
                         <i class="fa-regular fa-trash-can"></i>
@@ -278,39 +277,39 @@
 
             <div class="search box-sh">
                 <h2 class="dash_box_head">top search items</h2>
-                <div class="search-p">
+                <div class="d-flex justify-content-between">
                     <p class="dash-box-p">keyword</p> 
                     <p class="dash-box-p">search count</p>
                 </div>
                 <ul>
-                    <li>
-                        <span class="word">programming</span>
-                        <span class="number">220</span>
+                    <li class="d-flex justify-content-between align-items-center py-3">
+                        <span>programming</span>
+                        <span class="btn2">220</span>
                     </li>
-                <ul>
-                    <li>
-                        <span class="word">javascript</span>
-                        <span class="number">180</span>
+                
+                    <li class="d-flex justify-content-between align-items-center py-3">
+                        <span>javascript</span>
+                        <span class="btn2">180</span>
                     </li>
-                <ul>
-                    <li>
-                        <span class="word">php</span>
-                        <span class="number">160</span>
+                
+                    <li class="d-flex justify-content-between align-items-center py-3">
+                        <span>php</span>
+                        <span class="btn2">160</span>
                     </li>
-                <ul>
-                    <li>
-                        <span class="word">code</span>
-                        <span class="number">145</span>
+                
+                    <li class="d-flex justify-content-between align-items-center py-3">
+                        <span>code</span>
+                        <span class="btn2">145</span>
                     </li>
-                <ul>
-                    <li>
-                        <span class="word">design</span>
-                        <span class="number">110</span>
+                
+                    <li class="d-flex justify-content-between align-items-center py-3">
+                        <span>design</span>
+                        <span class="btn2">110</span>
                     </li>
-                <ul>
-                    <li>
-                        <span class="word">logic</span>
-                        <span class="number">95</span>
+                
+                    <li class="d-flex justify-content-between align-items-center py-3">
+                        <span>logic</span>
+                        <span class="btn2">95</span>
                     </li>
                 </ul>
                 
@@ -318,72 +317,72 @@
 
                 <div class="uploads box-sh">
                     <h2 class="dash_box_head">latest uploads</h2>
-                    <div class="content">
-                        <div class="part1">
-                            <img src="imgs/pdf.svg" alt="">
+                    <div class="content d-flex justify-content-between align-items-center py-1 border-bottom border-bottom-2">
+                        <div class="part1 d-flex">
+                            <img src="imgs/pdf.svg" alt="#" class="me-2 rounded-1">
                             <div class="info">
                                 <p>my-file.pdf</p>
                                 <p>elzero</p>
                             </div>
                         </div>
-                        <span class="part2">2.9mb</span>
+                        <span class="btn2">2.9mb</span>
                     </div>
-                    <div class="content">
-                        <div class="part1">
-                            <img src="imgs/avi.svg" alt="">
+                    <div class="content d-flex justify-content-between align-items-center py-1 border-bottom border-bottom-2">
+                        <div class="part1 d-flex">
+                            <img src="imgs/avi.svg" alt="#" class="me-2 rounded-1">
                             <div class="info">
                                 <p>My-Video-File.avi</p>
                                 <p>Admin</p>
                             </div>
                         </div>
-                        <span class="part2">4.9mb</span>
+                        <span class="btn2">4.9mb</span>
                     </div>
-                    <div class="content">
-                        <div class="part1">
-                            <img src="imgs/psd.svg" alt="">
+                    <div class="content d-flex justify-content-between align-items-center py-1 border-bottom border-bottom-2">
+                        <div class="part1 d-flex">
+                            <img src="imgs/psd.svg" alt="#" class="me-2 rounded-1">
                             <div class="info">
                                 <p>My-Psd-File.pdf</p>
                                 <p>Osama</p>
                             </div>
                         </div>
-                        <span class="part2">4.5mb</span>
+                        <span class="btn2">4.5mb</span>
                     </div>
-                    <div class="content">
-                        <div class="part1">
-                            <img src="imgs/zip.svg" alt="">
+                    <div class="content d-flex justify-content-between align-items-center py-1 border-bottom border-bottom-2">
+                        <div class="part1 d-flex">
+                            <img src="imgs/zip.svg" alt="#" class="me-2 rounded-1">
                             <div class="info">
                                 <p>My-Zip-File.pdf</p>
                                 <p>User</p>
                             </div>
                         </div>
-                        <span class="part2">8.9mb</span>
+                        <span class="btn2">8.9mb</span>
                     </div>
-                    <div class="content">
-                        <div class="part1">
-                            <img src="imgs/dll.svg" alt="">
+                    <div class="content d-flex justify-content-between align-items-center py-1 border-bottom border-bottom-2">
+                        <div class="part1 d-flex">
+                            <img src="imgs/dll.svg" alt="#" class="me-2 rounded-1">
                             <div class="info">
                                 <p>My-DLL-File.pdf</p>
                                 <p>Admin</p>
                             </div>
                         </div>
-                        <span class="part2">4.9mb</span>
+                        <span class="btn2">4.9mb</span>
                     </div>
-                    <div class="content">
-                        <div class="part1">
-                            <img src="imgs/eps.svg" alt="">
+                    <div class="content d-flex justify-content-between align-items-center py-1 border-bottom border-bottom-2">
+                        <div class="part1 d-flex">
+                            <img src="imgs/eps.svg" alt="#" class="me-2 rounded-1">
                             <div class="info">
                                 <p>My-Eps-File.pdf</p>
                                 <p>Designer</p>
                             </div>
                         </div>
-                        <span class="part2">8.9mb</span>
+                        <span class="btn2">8.9mb</span>
                     </div>
             </div>
 
-            <div class="progress box-sh">
+            <div class="progress1 box-sh">
                 <h2 class="dash_box_head">Last Project Progress</h2>
                 <div class="content">
-                    <ul>
+                    <ul class="d-flex flex-column position-relative">
                         <li>Got The Project</li>
                         <li>Started The Project</li>
                         <li>The Project About To Finish</li>
@@ -397,8 +396,8 @@
             <div class="reminders box-sh">
                 <h2 class="dash_box_head">reminders</h2>
                 <div class="content">
-                    <ul>
-                        <li>
+                    <ul class="d-flex flex-column gap-3">
+                        <li class="d-flex align-items-center gap-4 p-1">
                             <div class="bgg-blue"></div>
                             <div class="bgg-blue"></div>
                             <div>
@@ -406,7 +405,7 @@
                                 <p>28/09/2022 - 12:00am</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="d-flex align-items-center gap-4 p-1">
                             <div class="bgg-green"></div>
                             <div class="bgg-green"></div>
                             <div>
@@ -414,7 +413,7 @@
                                 <p>26/10/2022 - 12:00am</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="d-flex align-items-center gap-4 p-1">
                             <div class="bgg-orange"></div>
                             <div class="bgg-orange"></div>
                             <div>
@@ -422,7 +421,7 @@
                                 <p>05/11/2022 - 12:00am</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="d-flex align-items-center gap-4 p-1">
                             <div class="bgg-red"></div>
                             <div class="date bgg-red"></div>
                             <div>
@@ -434,66 +433,66 @@
                 </div>
             </div>
 
-            <div class="post box-sh">
+            <div class="post box-sh d-flex flex-column">
                 <h2 class="dash_box_head">latest post</h2>
                 <div class="content">
-                    <div class="part1">
+                    <div class="part1 d-flex gap-2">
                         <div class="p1">
-                            <img src="imgs/avatar.png" alt="">
+                            <img src="imgs/avatar.png" alt="#" class="mb-4 pill-rounded">
                         </div>
                         <div class="p2">
                             <h3>Osama Elzero</h3>
                             <p>About 3 Hours Ago</p>
                         </div>
-                    </div>
-                    <div class="part2">
+                    </div> 
+                    <div class="part2 pt-2 pb-5 border-top border-bottom">
                         <p>You can fool all of the people some of the time, and some of the people all of the time, 
                             but you can't fool all of the people all of the time.</p>
                     </div>
-                    <div class="part3">
+                    <div class="part3 d-flex justify-content-between align-items-center p-2">
                         <span><i class="fa-regular fa-heart"></i> 1.8 k</span>
                         <span><i class="fa-regular fa-comments"></i> 500</span>
                     </div>
                 </div>
             </div>
 
-            <div class="social box-sh">
+            <div class="social box-sh mb-2 pe-2 d-flex align-items-center justify-content-between">
                 <h2 class="dash_box_head">Social Media Stats</h2>
                 <div class="content">
                     <div class="box bg-blue">
-                        <div class="info">
-                            <i class="fa-brands fa-twitter  "></i>
+                        <div class="info d-flex align-items-center">
+                            <i class="fa-brands fa-twitter  text-white d-flex justify-content-center align-items-center"></i>
                             <p>90K Followers</p>
                         </div>
-                        <a href="#" class="bgg-blue">follow</a>
+                        <a href="#" class="rounded-1 text-capitalize bgg-blue">follow</a>
                     </div>
                     <div class="box bg-blue">
-                        <div class="info">
-                            <i class="fa-brands fa-facebook-f "></i>
+                        <div class="info d-flex align-items-center">
+                            <i class="fa-brands fa-facebook-f text-white d-flex justify-content-center align-items-center"></i>
                             <p>2M Like</p>
                         </div>
-                        <a href="#" class="bgg-blue">like</a>
+                        <a href="#" class="rounded-1 text-capitalize bgg-blue">like</a>
                     </div>
                     <div class="box bg-red">
-                        <div class="info">
-                            <i class="fa-brands fa-youtube "></i>
+                        <div class="info d-flex align-items-center">
+                            <i class="fa-brands fa-youtube text-white d-flex justify-content-center align-items-center"></i>
                             <p>1M Subs</p>
                         </div>
-                        <a href="#" class="bgg-red">subscribe</a>
+                        <a href="#" class="rounded-1 text-capitalize bgg-red">subscribe</a>
                     </div>
                     <div class="box bg-blue">
-                        <div class="info">
-                            <i class="fa-brands fa-linkedin "></i>
+                        <div class="info d-flex align-items-center">
+                            <i class="fa-brands fa-linkedin text-white d-flex justify-content-center align-items-center"></i>
                             <p>70K Followers</p>
                         </div>
-                        <a href="#" class="bgg-blue">follow</a>
+                        <a href="#" class="rounded-1 text-capitalize bgg-blue">follow</a>
                     </div>
                 </div>
             </div>
 
             <div class="projects box-sh">
                 <h2 class="dash_box_head">projects</h2>
-                <div class="content">
+                <div class="overflow-auto">
                     <table>
                         <tr>
                             <th>Name</th>

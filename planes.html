@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/main.css">
@@ -16,12 +17,12 @@
     <title>p4</title>
 </head>
 <body>
-        <div class="aside">
+    <div class="aside">
         <div class="title">
             <h2>elzero</h2>
         </div>
         <ul>
-            <a href="dashboard.html">
+            <a href="dashboard.html" class="active">
                 <i class="fa-regular fa-chart-bar fa-fw"></i>
                 <li>dashboard</li>
             </a>
@@ -56,28 +57,28 @@
                 <li>files</li>
             </a>
             
-            <a href="planes.html" class="active">
+            <a href="planes.html">
                 <i class="fa-regular fa-credit-card fa-fw"></i>
                 <li>planes</li>
             </a>
         </ul>
     </div>
 
-    <div class="nav">
-        <div class="main-header">
+    <div class="d-flex flex-column">
+        <div class="main-header d-flex justify-content-between align-items-center bg-white position-relative p-2">
             <form action="" class="search">
-                <input type="search" name="" id="">
+                <input type="search" name="" id="" placeholder="Type A Keyword" >
             </form>
-            <div class="info">
+            <div class="info d-flex position-relative align-items-center">
                 <i class="fa-regular fa-bell fa-lg"></i>
-                <img src="imgs/avatar.png" alt="">
+                <img src="imgs/avatar.png" alt="#" class="ms-10">
             </div>
         </div>
 
         <div class="main-nav-head">planes</div>
         <div class="planes-body">
-            <div class="box">
-                <div class="part1 bgg-green">
+            <div class="box p-4 bg-white rounded-2">
+                <div class="part1 bgg-green py-3 d-flex flex-column align-items-center justify-content-center text-white">
                     <p>Free</p>
                     <p><sup>$</sup> 0.00  </p>
                 </div>
@@ -123,8 +124,8 @@
                     <a href="#" class="bgg-green">join</a>
                 </div>
             </div>
-            <div class="box">
-                <div class="part1 bgg-blue">
+            <div class="box p-4 bg-white rounded-2">
+                <div class="part1 bgg-blue py-3 d-flex flex-column align-items-center justify-content-center text-white">
                     <p>basic</p>
                     <p><sup>$</sup> 7.99  </p>
                 </div>
@@ -170,8 +171,8 @@
                     <a href="#" class="bgg-blue">join</a>
                 </div>
             </div>
-            <div class="box">
-                <div class="part1 bgg-orange">
+            <div class="box p-4 bg-white rounded-2">
+                <div class="part1 bgg-orange py-3 d-flex flex-column align-items-center justify-content-center text-white">
                     <p>Premium</p>
                     <p><sup>$</sup> 19.99  </p>
                 </div>
